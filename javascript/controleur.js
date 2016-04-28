@@ -81,7 +81,7 @@ var compteur_present = 0; //compteur des pastiles présentes ms mal placées
 	}
 	else { if (fini == false) { //jeu en cours
 		ligne++; //incrémentation
-		var essais = 15-ligne;
+		var essais = 13-ligne;
     document.getElementById("tries").innerHTML = "<p>Il vous reste "+essais+" essais !</p>";
 		if (ligne !==13){
 		  var shaka = ligne+1;
