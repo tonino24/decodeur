@@ -166,7 +166,7 @@ a:hover .nocolor
 	color:white;
 }
 
-@media (max-width: 680px) {
+@media screen and (max-width: 680px) {
 	body {
 		background-size: contain;
 	}
