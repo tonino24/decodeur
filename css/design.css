@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+body
+{
+	background-image: url("../image/mastergold.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: arial, sans-serif;
+	margin: 10px;
+}
+
+#iphone
+{
+	width: 70%;
+  background-color: rgba(0, 0, 0, 0.5);
+	box-shadow: 8px 8px 7px #000000;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 60px;
+}
+
+
+div#entete
+{
+	height: 120px;
+}
+
+div#corps
+{
+	height: auto;
+	padding-top: 10px;
+	margin-bottom: 0;
+}
+
+div#menu
+{
+	height: 56px;
+	padding-top: 50px;
+	margin-bottom: 50px;
+}
+
+div#pied
+{
+	height: 79px;
+	padding-top: 6px;
+}
+
+h1
+{
+	padding-top: 40px;
+	padding-bottom: auto;
+	text-align: center;
+	color: yellow;
+	font-family: "Ma Super Fonte";
+	font-size: 47px;
+}
+
+p
+{
+	font-size: 0.9em;
+	text-align: center;
+	margin: 0;
+	padding-top: 10px;
+}
+
+table
+{
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table#grille
+{
+
+}
+
+table#panel
+{
+	background-color: black;
+}
+
+table#solution
+{
+	display: none;
+	background-color: black;
+}
+
+#panel img
+{
+	border-style: none;
+}
+
+a:link
+{
+	text-decoration: none;
+}
+
+a:link .color
+{
+	color: yellow;
+}
+
+a:link .nocolor
+{
+	color: white;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+a:hover .color
+{
+	text-decoration: underline;
+	color: yellow;
+}
+
+a:hover .nocolor
+{
+	text-decoration: underline;
+	color: white;
+}
+
+#grille tr:not(:first-child) {
+    display: none;
+}
+.boomShaka {
+    display: table-row !important;
+}
+
+@font-face {
+    font-family: "Ma Super Fonte";
+    src: url('wwDigital.ttf');
+}
+
+.button {
+	font-family: "Ma Super Fonte";
+	color:#ffffff;
+  box-shadow: 0px 0px 10px #0000;
+  border-radius: 10px;
+  border: 1px solid #fcff2f;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 8px;
+	font-size: 15px;
+	background-color: transparent;
+}
+
+.button:hover{
+	color: yellow;
+}
+
+.antoblero{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+#score, #tries {
+	color:white;
+}
+
+@media (min-width: 300px) and (max-width: 680px) {
+    div#menu {
+        font-size: 12px;
+    }
+ div#iphone {
+        margin: 0;
+        width: 100%;
+ }
+    #panel img {
+        width: 20px;
+        height: 20px;
+    }
+    img[id|="patch"] {
+        width: 20px;
+        height: 20px;
+    }
+}
