@@ -61,7 +61,7 @@ function placerchiffres(color) {
 
 	if (unite == 4){
 
-		alert ('Vous devez soumettre votre proposition !')}
+		swal('Vous devez soumettre votre combinaison !')}
 
 	if ((fini == false) && (unite < 4)) { //le jeu est en cours et on ne place que 4 pastilles
 		var number = decimal+unite;
@@ -77,7 +77,7 @@ var compteur_bon = 0; //compteur des pastilles bien placées
 var compteur_present = 0; //compteur des pastiles présentes ms mal placées
 
 	if (proposition[3] == 'image/patch.png' && fini == false) { //jeu en cours
-		alert ('La proposition est incomplète.');
+		swal('La proposition est incomplète.');
 	}
 	else { if (fini == false) { //jeu en cours
 		ligne++; //incrémentation
@@ -132,12 +132,12 @@ var compteur_present = 0; //compteur des pastiles présentes ms mal placées
                  document.getElementById("score").innerHTML = "<p>Score : "+score+"</p>";
 		             document.getElementById("tries").innerHTML = "";
 	               fini = true //partie finie
-	               alert('Bravo, vous avez gagné!');
+	               swal("Jackpot ! Le coffre s\'est ouvert !");
 	               afficher_sol();}
 
 	else {if(proposition.join() != bonnecombinaison.join() && ligne == 13 && fini == false) {
 								 document.getElementById("tries").innerHTML = "";
-	               window.alert ('Vous avez perdu!');
+	               swal('Le code est bien trop compliqué, tant pis pour le butin !');
 	               fini = true; //partie finie
 	               afficher_sol();}}
 
